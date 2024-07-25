@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 import os
 import requests
 import influxdb_client
@@ -59,11 +58,9 @@ def main(count,start):
             snaddr = key.get('snaddr')
             if snaddr is not None:
                 snat_sessions.append(snaddr)
-
-            
+           
         else:
             start += 20
-
 
 if __name__ == "__main__":
     main(20,0)
